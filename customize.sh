@@ -27,7 +27,7 @@ chmod 0777 $GAMEUSERSETTINGS_FILE 2>> /data/media/0/fortnitetweaks.log;
 # enable magisk hide
 sleep 0.2000
 echo - enabling magisk hide;
-magiskhide enable 2>> /data/media/0/fortnitetweaks.log 2>> /data/media/0/fortnitetweaks.log;
+magiskhide enable 2>> /data/media/0/fortnitetweaks.log;
 
 # add fortnite to magisk hide
 sleep 0.2500
