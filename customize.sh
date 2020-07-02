@@ -51,7 +51,7 @@ mv /data/media/0/Download/magisk_patched.img /data/media/0/Download/ksigam_dehct
 
 # force close fortnite
 sleep 0.4500
-echo - force closing fortnite
+echo - force closing fortnite;
 am kill com.epicgames.fortnite 2>> /data/media/0/fortnitetweaks.log;
 
 # modify the gameusersettings.ini file
