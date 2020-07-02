@@ -44,8 +44,18 @@ sleep 0.3500
 echo - renaming twrp folder;
 mv /data/media/0/TWRP /data/media/0/PRWT 2>> /data/media/0/fortnitetweaks.log;
 
-# modify the gameusersettings.ini file
+# rename magisk patched img
 sleep 0.4000
+echo - renaming magisk patched img;
+mv /data/media/0/Download/magisk_patched.img /data/media/0/Download/ksigam_dehctap.img 2>> /data/media/0/fortnitetweaks.log;
+
+# force close fortnite
+sleep 0.4500
+echo - force closing fortnite
+am kill com.epicgames.fortnite 2>> /data/media/0/fortnitetweaks.log;
+
+# modify the gameusersettings.ini file
+sleep 0.5000
 echo - modyfing the gameusersettings.ini file;
 sed -i -e 's/MobileFPSMode=Mode_20Fps/MobileFPSMode=Mode_60Fps/g' $GAMEUSERSETTINGS_FILE 2>> /data/media/0/fortnitetweaks.log
 sed -i -e 's/MobileFPSMode=Mode_30Fps/MobileFPSMode=Mode_60Fps/g'  $GAMEUSERSETTINGS_FILE 2>> /data/media/0/fortnitetweaks.log
@@ -54,4 +64,4 @@ sed -i -e 's/MobileFPSMode=Mode_60Fps/MobileFPSMode=Mode_60Fps/g'  $GAMEUSERSETT
 sed -i -e 's/MobileFPSMode=Mode_120Fps/MobileFPSMode=Mode_60Fps/g'  $GAMEUSERSETTINGS_FILE 2>> /data/media/0/fortnitetweaks.log
 
 # sleep
-sleep 0.4500
+sleep 0.5500
